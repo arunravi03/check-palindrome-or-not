@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Find Palindrome or not
+</body>
+<script>
+    function checkPalindrome(str) {
+        const len = str.length;
+
+        for (let i = 0; i < len / 2; i++) {
+
+            if (str[i] !== str[len - 1 - i]) {
+                return 'It is not a palindrome';
+            }
+        }
+        return 'It is a palindrome';
+    }
+    console.log(checkPalindrome('malayalam'))
+    console.log(checkPalindrome('dad'))
+    console.log(checkPalindrome('mom'))
+    console.log(checkPalindrome('arun'))
+    console.log(checkPalindrome('342343'))
+</script>
+
+</html>
+
+<!--
+    Algorithm
+
+    Step1 - Create a function with an input
+    Step2 - Check the length of the given input
+    Step3 - Then loop through the string
+    Step4 - If the given input is palindrome, Print 'It is palindrome'
+    Step5 - If not print 'Not a palindrome'
+-->
